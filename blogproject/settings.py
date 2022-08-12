@@ -135,6 +135,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #フォームの送信データをターミナルに出力
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+<<<<<<< HEAD
 
 DEBUG = False
 
@@ -168,3 +169,5 @@ if not DEBUG:
 
     # HerokuのConfigを読み込み
     django_heroku.settings(locals())
+=======
+>>>>>>> refs/remotes/origin/main
