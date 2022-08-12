@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o$-1t&^vdlsunt$t9v(yro8l82+4ub6y5ank#8$2%@ftvx)^8d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['piano-school.herokuapp.com']
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
@@ -135,3 +135,36 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #フォームの送信データをターミナルに出力
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEBUG = False
+
+try:
+    # 存在する場合、ローカルの設定読み込み
+    from .settings_local import *
+except ImportError:
+    pass
+
+if not DEBUG:
+    # Heroku settings
+
+    # staticの設定
+    import os
+    import django_heroku
+
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    # Static files (CSS, JavaScript, Images)
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATIC_URL = '/static/'
+
+    # Extra places for collectstatic to find static files.
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),
+    )
+
+    MIDDLEWARE += [
+        'whitenoise.middleware.WhiteNoiseMiddleware',
+    ]
+
+    # HerokuのConfigを読み込み
+    django_heroku.settings(locals())
