@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o$-1t&^vdlsunt$t9v(yro8l82+4ub6y5ank#8$2%@ftvx)^8d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['piano-school.herokuapp.com']
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
