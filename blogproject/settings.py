@@ -135,7 +135,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #フォームの送信データをターミナルに出力
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-<<<<<<< HEAD
 
 DEBUG = False
 
@@ -155,7 +154,7 @@ if not DEBUG:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     # Static files (CSS, JavaScript, Images)
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATIC_URL = '/static/'
 
     # Extra places for collectstatic to find static files.
@@ -169,5 +168,3 @@ if not DEBUG:
 
     # HerokuのConfigを読み込み
     django_heroku.settings(locals())
-=======
->>>>>>> refs/remotes/origin/main
