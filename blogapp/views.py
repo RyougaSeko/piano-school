@@ -57,7 +57,7 @@ class ContactFormView(FormView):
         email = form.cleaned_data['email']
         from_email = 'hoop105ryouga@gmail.com'
         to_list = ['hoop105ryouga@gmail.com']
-        title = form.cleaned_data['title']
+        title = "title"
         subject = "お問い合わせ: {}".format(title)
 
 
@@ -65,7 +65,7 @@ class ContactFormView(FormView):
 
         message =  \
             '送信名： {0}\nメールアドレス: {1}\n タイトル:{2}\n メッセージ:\n{3}'\
-                .format(name, email, title, message)
+                .format(name, email, "title", message)
 
         #Emalimessageオブジェクトを生成
         message = EmailMessage(subject, message, from_email, to_list
