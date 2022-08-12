@@ -1,5 +1,5 @@
 from email.message import EmailMessage
-from turtle import title
+# from turtle import title
 from django import forms
 from django.conf import settings
 from django.core.mail import BadHeaderError, send_mail
@@ -9,13 +9,13 @@ from django.http import HttpResponse
 class ContactForm(forms.Form):
     #field(メンバ、プロパティ)を定義
 
-    title = forms.CharField(
-        label = '',
-        widget=forms.TextInput(attrs={
-            'class': 'form-control',
-            'placeholder': "件名",
-        }), 
-    )
+    # title = forms.CharField(
+    #     label = '',
+    #     widget=forms.TextInput(attrs={
+    #         'class': 'form-control',
+    #         'placeholder': "件名",
+    #     }), 
+    # )
     
     name = forms.CharField(
         label='',
