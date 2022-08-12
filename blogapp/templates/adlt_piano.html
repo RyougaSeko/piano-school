@@ -1,0 +1,88 @@
+
+{% block content %}
+    <header class="active">
+    <div class="inner">
+        <!--ロゴの部分-->
+        <h1>
+            奈緒美ピアノ教室
+        </a>
+        </h1>
+        <!-- ナビゲーションバー -->
+
+        <nav id="gnav">
+        <ul>
+            <li>
+            <a href="https://www.sukigara-piano.com/">
+                <i class="material-icons"></i>トップページ
+            </a>
+            </li>
+            <li>
+            <a href="https://www.sukigara-piano.com/piano/"><i class="fas fa-music"></i> ピアノの効果</a>
+            </li>
+            <li>
+            <a href="https://www.sukigara-piano.com/lesson/"><i class="fas fa-music"></i> レッスン案内</a>
+            </li>
+            <li>
+            <a href="https://www.sukigara-piano.com/company/"><i class="fas fa-music"></i> 教室案内</a>
+            </li>
+            </ul>
+            <div class="enabled"></div>
+        </nav>
+        <button id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        </div>
+    </div>
+    </header>
+    {% comment %} <div class="adlt_piano_img" style="background-image: url(../static/pic/IMG_3834_2.jpg);"> {% endcomment %}
+
+
+    <footer>
+    <div class="inner">
+        <h1>
+        <a href="#">
+            <!-- <img src="https://www.sukigara-piano.com/assets/img/logo.png" alt="鋤柄音楽教室"> -->
+        </a>
+        </h1>
+        <h2> 松阪市の【奈緒美ピアノ教室】は、幼児から大人まで幅広くレッスンを承っております。ピアノ・音楽教室なら当教室へお気軽にお問い合わせください。</h2>
+        <nav>
+        <ul data-length="">
+            <li>
+            <a href="https://www.sukigara-piano.com/sitemap/">
+            <i class="fas fa-music"></i> サイトマップ
+            </a>
+            </li>
+            <li>
+            <a href="https://www.sukigara-piano.com/privacy/">
+                <i class="fas fa-music"></i> プライバシーポリシー
+            </a>
+            </li>
+            <li> <a href="{% url 'blogapp:contact' %}">
+            <i class="fas fa-music"></i> お問い合わせ</a>
+            </li>
+        </ul>
+        </nav>
+
+        <div class="about">
+
+        <div>三重県松阪市 山室町
+            <br>
+        </div>
+        <div>
+            <!-- <span class="number">
+            <span>
+                <img src="https://www.sukigara-piano.com/assets/img/icon-piano.png" alt=""> 080-5163-8712
+            </span>
+            <span>
+                <img src="https://www.sukigara-piano.com/assets/img/icon-sax.png" alt=""> 080-5163-9234
+            </span>
+            </span> -->
+            <br> 9:00～21:00（受付時間 〜23:00）
+        </div>
+        </div>
+        <div class="copyright"> © 2022 奈緒美ピアノ教室.</div>
+    </div>
+    </footer>
+{% endblock %} 

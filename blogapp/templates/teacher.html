@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+ <meta charset="utf-8">
+ <title>サイトタイトル</title>
+ <meta name="description" content="サイトの概要を記載">
+ <link rel="stylesheet" href="../static/style3.css">
+ <script src="https://kit.fontawesome.com/bdfc4475ab.js" crossorigin="anonymous"></script>
+
+
+</head> 
+<body class="home blog">
+
+  <header class="active" style = "background-image: url(../static/pic/bg-body.png);">
+    <div class="inner">
+      <!--ロゴの部分-->
+      <h1>
+          奈緒美ピアノ教室
+        </a>
+      </h1>
+
+      <!-- ナビゲーションバー -->
+
+      <nav id="gnav">
+        <ul>
+          <li>
+            <a href="{% url 'blogapp:index' %}">
+              <i class="material-icons"></i>トップページ
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'blogapp:teacher' %}"><i class="fas fa-music"></i> 講師紹介</a>
+          </li>
+          <li>
+            <a href="{% url 'blogapp:contact' %}"><i class="fas fa-music"></i> お問合せ</a>
+          </li>
+          </ul>
+          <div class="enabled"></div>
+        </nav>
+        <button id="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="intro" style="background-color: #FFF6F4;">
+    <div class="section align-center">
+      <div class="inner">
+        <div class="title">奈緒美先生</div>
+        </div>
+        <ul class="list-button split circle" data-length="3">
+          <li>
+            <div class="image" style="background-image: url(../static/pic/IMG_3838.jpg);">
+            </div>
+          </li>
+        </ul>
+        <div class="subtitle">プロフィール</div>
+        <div class="description">*********************</div>
+        <div class="description">">*********************</div>
+        <div class="description">">*********************</div>
+        <div class="description">">*********************</div>
+      </div>
+    </div>
+  
+    <footer style = "background-image: url(../static/pic/bg-body.png);">
+      <div class="inner">
+        <h1>
+          <a href="#">
+            <!-- <img src="https://www.sukigara-piano.com/assets/img/logo.png" alt="鋤柄音楽教室"> -->
+          </a>
+        </h1>
+        <h2> 松阪市の【奈緒美ピアノ教室】は、幼児から大人まで幅広くレッスンを承っております。
+          ピアノレッスンなら当教室へお気軽にお問い合わせください。</h2>
+        <nav>
+          <ul data-length="">
+            <li> <a href="{% url 'blogapp:contact' %}">
+              <i class="fas fa-music"></i> お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="about">
+          <div>三重県松阪市 山室町
+            <br>
+          </div>
+          <div>9:00～19:00
+            <br>
+          </div>
+        </div>
+        <div class="copyright"> © 2022 奈緒美ピアノ教室.</div>
+      </div>
+    </footer>
+</body>
+</html>

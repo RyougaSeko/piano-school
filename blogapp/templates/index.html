@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+ <meta charset="utf-8">
+ <title>サイトタイトル</title>
+ <meta name="description" content="サイトの概要を記載">
+ <link rel="stylesheet" href="../static/style.css">
+ <script src="https://kit.fontawesome.com/bdfc4475ab.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="home blog">
+
+  <header class="active" style = "background-image: url(../static/pic/bg-body.png);">
+    <div class="inner">
+      <!--ロゴの部分-->
+      <h1>
+
+          奈緒美ピアノ教室
+        </a>
+      </h1>
+
+      <!--右側のtellの部分-->
+      {% comment %} <div class="tel">
+        <ul>
+          <li>
+            <div class="icon">
+              <img src="https://www.sukigara-piano.com/assets/img/icon-piano-w.png" alt="">
+            </div>
+            <div class="number">080-5163-8712</div>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="https://www.sukigara-piano.com/assets/img/icon-sax-w.png" alt="">
+            </div>
+            <div class="number">080-5163-9234</div>
+          </li>
+        </ul>
+      </div> {% endcomment %}
+
+      <!--アメブロの部分-->
+
+      <div class="bn2">
+        {% comment %} <a href="http://ameblo.jp/yuri-sax-0630/" target="_blank"> {% endcomment %}
+          <div class="btn ameba" style="background-color:#FBAED2">
+            <span>0598-21-0723</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ナビゲーションバー -->
+
+      <nav id="gnav">
+        <ul>
+          <li>
+            <a href="{% url 'blogapp:index' %}">
+              <i class="material-icons"></i>トップページ
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'blogapp:teacher' %}"><i class="fas fa-music"></i> 講師紹介</a>
+          </li>
+          <li>
+            <a href="{% url 'blogapp:contact' %}"><i class="fas fa-music"></i> お問合せ</a>
+          </li>
+          </ul>
+          <div class="enabled"></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="visual" class="sticky">
+    <div class="image">
+      <div class="text">
+        <h2 class="title">Feel Music</h2>
+        <p class="description"></p>
+      </div>
+      <div class="bx-wrapper" style="max-width: 100%;">
+        <div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 600px;">
+          <div class="slider" style="width: auto; position: relative;">
+            <div style="background-image: url(../static/pic/IMG_3841.png); float: none; list-style: none; position: absolute; width: 601px; z-index: 50; display: block;" aria-hidden="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section id="intro" style = "background-color:#FFF6F4;">
+    <div class="section align-center">
+      <div class="inner">
+        <div class="title"><i class="fas fa-music"></i> 心の響きを音色に</div>
+        <div class="subtitle">〜自由な発想をピアノの音色で表現してみませんか〜
+        </div>
+        <ul class="list-button split circle" data-length="3">
+          <li>
+            <div class="image" style="background-image: url(../static/pic/IMG_3926.JPG);">
+            </div>
+          </li>
+          <li>
+            <div class="image" style="background-image: url(../static/pic/IMG_3929.JPG);">
+            </div>
+          </li>
+          <li>
+            <div class="image" style="background-image: url(../static/pic/IMG_3930.jpg);">
+            </div>
+          </li>
+        </ul>
+        <div class="description" style = "font-size: 20px; padding-top: 10px;">三重県松阪市の教室にてピアノの教室を開いています。</div>
+        <div class="description" style = "font-size: 20px">当教室は、一人一人の生徒さんの持つ感性や得意を伸ばすことを第一としています <i class="fas fa-music"></i></div>
+        <div class="list-text parts-pw parts-half align-center">
+          {% comment %} <ul>
+            <li>
+              <i class="material-icons">music_note</i>憧れのあの曲を演奏したい！
+            </li>
+            <li>
+              <i class="material-icons">music_note</i>合唱コンクールで伴奏したい！
+            </li>
+            <li>
+              <i class="material-icons">music_note</i>吹奏楽部で活躍したい！
+            </li>
+            <li>
+              <i class="material-icons">music_note</i>コンクールに挑戦してみたい！！
+            </li>
+          </ul> {% endcomment %}
+        </div>
+        {% comment %} <div class="description">
+        </div> {% endcomment %}
+      </div>
+    </div>
+  <!-- 大人のピアノ教室、子どものピアノ教室 -->
+  <section id="works">
+  <!-- <div class="background background-fixed" style="background-image: url(https://www.sukigara-piano.com/assets/img/visual.jpg);"> -->
+  <div class="background background-fixed" style="background-image: url("");">
+
+    <div class="inner section-block">
+      <div class="list-products">
+        <div class="split" data-length="2">
+
+          <div class="section section-image background align-center parts-radius-left" style="background-image: url(../static/pic/IMG_3834_2.jpg);">
+            <a href="{% url 'blogapp:contact' %}" style="text-decoration: none;">
+              <div class="overlay">
+                <div class="inner">
+                  <div class="title" style="color:#fff;">大人のピアノ教室</div>
+                  <span class="link btn-type1">詳しくはこちら</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="section section-image background align-center parts-radius-left" style="background-image: url(../static/pic/IMG_3836.png);">
+            <a href="{% url 'blogapp:contact' %}" style="text-decoration: none;">
+              <div class="overlay">
+                <div class="inner">
+                  <div class="title" style="color:#fff;">子どものピアノ教室</div>
+                  <span class="link btn-type1">詳しくはこちら</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="after-white">
+    </div>
+  </div>
+</section>
+
+  <footer style = "background-image: url(../static/pic/bg-body.png);">
+    <div class="inner">
+      <h1>
+        <a href="#">
+          <!-- <img src="https://www.sukigara-piano.com/assets/img/logo.png" alt="鋤柄音楽教室"> -->
+        </a>
+      </h1>
+      <h2> 松阪市の【奈緒美ピアノ教室】は、幼児から大人まで幅広くレッスンを承っております。
+        ピアノレッスンなら当教室へお気軽にお問い合わせください。</h2>
+      <nav>
+        <ul data-length="">
+          <li> <a href="{% url 'blogapp:contact' %}">
+            <i class="fas fa-music"></i> お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="about" style = "background-color:#FFF6F4;">
+        <div>三重県松阪市 山室町
+          <br>
+        </div>
+        <div>9:00～19:00
+          <br>
+        </div>
+      </div>
+      <div class="copyright"> © 2022 奈緒美ピアノ教室.</div>
+    </div>
+  </footer>
+</body>
+</html>
