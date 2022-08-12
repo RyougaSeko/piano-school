@@ -10,3 +10,4 @@ scipy==1.9.0
 smart-open==6.0.0
 sqlparse==0.4.2
 whitenoise==6.2.0
+dj-static==0.0.6
